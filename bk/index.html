@@ -1,0 +1,2091 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>《RO仙境傳說Online》露天商店查詢平台</title>
+    <meta name="description" content="RO露天成交查詢平台登場，線上露天銀卡，不論販售&收購皆可查詢，讓你掌握30天內所有成交紀錄" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="《RO仙境傳說Online》露天商店查詢平台" />
+    <meta property="og:description" content="RO露天成交查詢平台登場，線上露天銀卡，不論販售&收購皆可查詢，讓你掌握30天內所有成交紀錄" />
+    <meta property="og:url" content="https://event.gnjoy.com.tw/Ro/RoShopSearch" />
+    <meta property="og:image" content="https://static.gnjoy.com.tw/TRO/event/roShopSearch/img/1200x628.jpg" />
+    <meta property="og:site_name" content="RO仙境傳說Online" />
+    <meta property="og:locale" content="zh_TW" />
+    <link rel="apple-touch-icon" href="https://static.gnjoy.com.tw/TRO/event/roShopSearch/img/app_icon_192x192.png">
+    <link rel="Shortcut Icon" type="image/x-icon" href="https://ro.gnjoy.com.tw/images/common/fav.ico" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://static.gnjoy.com.tw/css/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://static.gnjoy.com.tw/css/colorbox_eventpage.css">
+    <link rel="stylesheet" href="https://static.gnjoy.com.tw/css/CodeBox.css">
+    <link rel="stylesheet" type="text/css" href="https://static.gnjoy.com.tw/TRO/event/roShopSearch/css/common.css?v=230921a" />
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-79281311-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-79281311-1');
+    </script>
+
+    <!-- Appier -->
+    <!-- Appier 全站 -->
+    <script>
+        window.appier_q = window.appier_q || [];
+        window.appier_q.push(
+            { "t": "register", "content": { "id": "f083", "site": "gnjoy.com.tw" } },
+            { "t": "pv_track", "action_id": "PageView_e8b5", "track_id": "82576b209d14fa7", "isCountReload": true, "counter": 0 },
+            { "t": "pv_track", "action_id": "ViewTwoPages_40f8", "track_id": "82576b209d14fa7", "isCountReload": false, "counter": 1 })
+    </script>
+    <script src="//jscdn.appier.net/aa.js?id=gnjoy.com.tw" async></script>
+
+</head>
+
+<body>
+    <!-- TopBar -->
+    <script src="https://static.gnjoy.com.tw/js/topBar.js"></script>
+
+    <main>
+        <header class="header">
+            <div class="header__logo">
+                <a href="https://ro.gnjoy.com.tw/" target="__blank">
+                    <img src="https://static.gnjoy.com.tw/TRO/event/roShopSearch/img/ro_logo.png" alt="RO仙境傳說Online">
+                </a>
+            </div>
+            <div class="header__cha">
+                <img class="coin_01" src="https://static.gnjoy.com.tw/TRO/event/roShopSearch/img/coin_01.png" alt="Zeny">
+                <img class="coin_02" src="https://static.gnjoy.com.tw/TRO/event/roShopSearch/img/coin_02.png" alt="Zeny">
+                <img class="coin_03" src="https://static.gnjoy.com.tw/TRO/event/roShopSearch/img/coin_03.png" alt="Zeny">
+                <img class="kafra" src="https://static.gnjoy.com.tw/TRO/event/roShopSearch/img/kafra.png" alt="Kafra">
+            </div>
+            <div class="header__slogan">
+                <p>RO仙境傳說Online</p>
+                <h1>露天商店查詢平台</h1>
+            </div>
+        </header>
+        <section class="searchArea">
+            <div class="tabs">
+                <input type="radio" class="tabs__radio" name="searchArea" id="searchTab1" checked>
+                <label for="searchTab1" class="tabs__label">
+                    <svg width="23" height="27" viewBox="0 0 23 27">
+                        <path fill-rule="evenodd"
+                              d="M11.697,26.414 C4.145,26.414 0.908,25.335 0.908,24.256 C0.908,23.177 1.987,22.638 1.987,18.322 C1.987,14.007 3.066,12.389 5.224,10.770 C7.034,9.412 7.921,9.152 8.460,8.073 L14.933,8.073 C15.473,9.152 16.360,9.412 18.170,10.770 C20.328,12.389 21.407,14.007 21.407,18.322 C21.407,22.638 22.486,23.177 22.486,24.256 C22.486,25.335 19.249,26.414 11.697,26.414 ZM15.756,20.935 L10.448,20.935 L15.560,14.648 L15.560,13.174 L12.869,13.174 L12.869,11.791 L11.066,11.791 L11.066,13.174 L8.726,13.174 L8.726,14.753 L13.083,14.753 L8.178,20.817 L8.178,22.513 L11.066,22.513 L11.066,23.896 L12.869,23.896 L12.869,22.513 L15.756,22.513 L15.756,20.935 ZM17.533,4.147 C16.472,4.883 15.473,5.915 14.933,6.994 L8.460,6.994 C7.954,5.797 7.200,5.130 6.653,4.554 C5.922,3.784 5.224,3.218 5.224,2.679 C5.224,2.139 6.286,2.004 7.381,2.679 C8.428,3.323 8.064,0.521 10.078,0.521 C11.157,0.521 13.315,2.544 13.315,2.544 C13.315,2.544 13.855,2.139 14.394,1.600 C15.159,0.835 16.234,1.171 16.552,2.139 C16.870,3.109 18.710,2.679 18.710,2.679 C18.710,2.679 18.806,3.263 17.533,4.147 Z" />
+                    </svg>
+                    露天商店查詢
+                </label>
+                <input type="radio" class="tabs__radio" name="searchArea" id="searchTab2">
+                <label for="searchTab2" class="tabs__label">
+                    <svg width="23" height="20" viewBox="0 0 23 20">
+                        <path fill-rule="evenodd"
+                              d="M22.353,2.115 C22.093,2.115 21.882,2.326 21.882,2.588 L21.882,17.260 C21.882,18.043 20.942,18.043 20.942,17.260 L20.942,1.168 C20.942,0.645 20.521,0.221 20.001,0.221 L1.191,0.221 C0.672,0.221 0.251,0.645 0.251,1.168 L0.251,16.786 C0.251,18.093 1.303,19.153 2.602,19.153 C2.602,19.153 19.940,19.153 20.471,19.153 C21.770,19.153 22.823,18.093 22.823,16.786 L22.823,2.588 C22.823,2.326 22.612,2.115 22.353,2.115 ZM2.132,3.061 L19.061,3.061 L19.061,4.481 L2.132,4.481 L2.132,3.061 ZM2.132,5.426 L11.537,5.426 L11.537,6.373 L2.132,6.373 L2.132,5.426 ZM2.132,7.319 L4.953,7.319 L4.953,8.266 L2.132,8.266 L2.132,7.319 ZM18.447,9.757 C18.239,9.757 18.046,9.693 17.885,9.585 L12.816,13.156 C12.828,13.218 12.835,13.281 12.835,13.346 C12.835,13.914 12.378,14.375 11.814,14.375 C11.250,14.375 10.792,13.914 10.792,13.346 C10.792,13.260 10.806,13.178 10.826,13.098 L8.148,11.317 C7.992,11.414 7.809,11.473 7.612,11.473 C7.426,11.473 7.255,11.419 7.105,11.332 L4.019,13.762 C4.026,13.809 4.033,13.854 4.033,13.902 C4.033,14.470 3.576,14.930 3.012,14.930 C2.448,14.930 1.990,14.470 1.990,13.902 C1.990,13.334 2.448,12.874 3.012,12.874 C3.179,12.874 3.335,12.918 3.474,12.990 L6.599,10.529 C6.597,10.501 6.591,10.474 6.591,10.445 C6.591,9.877 7.048,9.417 7.612,9.417 C8.176,9.417 8.633,9.877 8.633,10.445 C8.633,10.464 8.629,10.482 8.628,10.501 L11.460,12.386 C11.570,12.344 11.689,12.318 11.814,12.318 C11.964,12.318 12.105,12.353 12.234,12.411 L17.428,8.751 C17.428,8.743 17.426,8.736 17.426,8.729 C17.426,8.161 17.883,7.700 18.447,7.700 C19.011,7.700 19.469,8.161 19.469,8.729 C19.469,9.296 19.011,9.757 18.447,9.757 Z" />
+                    </svg>
+                    成交紀錄查詢
+                </label>
+                <div class="tabs__content">
+                    <div class="form">
+                        <div class="select__wrap selectSrv">
+                            <div class="default__option" role="button" id="div_svr" _val="">請選擇</div>
+                            <ol class="select__ol">
+                                <li value="">請選擇</li>
+                                <li value="2290">巴基利</li>
+                                <li value="3290">查爾斯</li>
+                                <li value="4290">波利</li>
+                                <li value="829">羅札納</li>
+                            </ol>
+                        </div>
+                        <div class="select__wrap selectBuySell">
+                            <div class="default__option" role="button" id="div_storetype" _val="2">全部</div>
+                            <ol class="select__ol">
+                                <li value="2">全部</li>
+                                <li value="0">販售</li>
+                                <li value="1">收購</li>
+                            </ol>
+                        </div>
+                        <div class="select__wrap selectDay">
+                            <div class="default__option" role="button" id="div_history_days" _val="1">1天</div>
+                            <ol class="select__ol">
+                                <li value="1">1天</li>
+                                <li value="7">7天</li>
+                                <li value="30">30天</li>
+                            </ol>
+                        </div>
+                        <!-- Google 驗證-->
+                        <div class="codeBox thin">
+                            <span id="logined_recapa_v2_hid"></span>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <div class="input__wrap inputText">
+                            <form1 action=".">
+                                <input type="text" placeholder="請輸入道具關鍵字" id="txb_KeyWord" list1="dal_KeyWord" autocomplete="off" maxlength="20">
+                                <datalist id="dal_KeyWord"></datalist>
+                                <div class="clear">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </form1>
+                        </div>
+                        <div class="searchBtn gradientYellow" id="searchBtn">
+                            <a href="history">查詢</a>
+                        </div>
+                    </div>
+                    <div class="keywords">
+                        <p>
+                            <span class="title">
+                                <svg width="9px" height="14px">
+                                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                          d="M5.081,6.170 C3.733,7.325 3.394,8.793 3.594,10.477 C2.858,10.114 2.685,9.484 2.681,8.746 C2.619,8.850 2.554,8.953 2.496,9.059 C2.435,9.171 2.369,9.282 2.328,9.401 C2.213,9.735 2.079,10.066 2.009,10.410 C1.789,11.497 2.018,12.453 2.902,13.193 C2.948,13.231 2.995,13.267 3.027,13.334 C2.875,13.269 2.720,13.212 2.573,13.138 C1.613,12.651 0.902,11.920 0.464,10.938 C0.074,10.065 0.009,9.153 0.169,8.215 C0.335,7.236 0.843,6.430 1.426,5.656 C1.858,5.083 2.298,4.513 2.691,3.913 C3.126,3.250 3.377,2.507 3.472,1.718 C3.515,1.357 3.524,0.991 3.550,0.593 C4.586,1.183 5.434,1.952 6.035,2.981 C6.638,4.013 6.907,5.130 6.842,6.361 C7.377,6.007 7.615,5.527 7.653,4.930 C7.665,4.930 7.678,4.929 7.690,4.928 C7.834,5.193 7.999,5.449 8.119,5.724 C8.326,6.198 8.529,6.676 8.692,7.166 C8.968,7.993 9.089,8.853 8.966,9.714 C8.750,11.220 7.963,12.355 6.611,13.080 C6.431,13.176 6.242,13.257 6.057,13.345 C6.049,13.331 6.041,13.318 6.033,13.304 C6.068,13.278 6.104,13.252 6.138,13.224 C6.635,12.822 6.971,12.311 7.090,11.684 C7.226,10.963 7.116,10.267 6.718,9.643 C6.433,9.196 6.105,8.776 5.796,8.344 C5.360,7.733 5.123,7.053 5.098,6.301 C5.097,6.270 5.090,6.238 5.081,6.170 Z" />
+                                </svg>熱門關鍵字
+                            </span>
+                            <span1 id="topKeywords"></span1>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="mainContent">
+
+            <section class="welcome">
+                <h1>歡迎使用露天商店查詢平台</h1>
+                <img class="welcome--kafra" src="https://static.gnjoy.com.tw/TRO/event/roShopSearch/img/welcome-2.png" alt="">
+            </section>
+
+            <section class="result result--shop">
+                <h4>露天商店查詢</h4>
+                <p><span id="shop_range"></span></p>
+                <div class="noResult" id="PoringCry1" style="display:none">
+                    <img src="https://static.gnjoy.com.tw/TRO/event/roShopSearch/img/poringcry.png" class="PoringCryImg" alt="">
+                    <h4><span id="PoringCry1Msg"></span>查無資料！</h4>
+                </div>
+                <div class="result--table" id="PoringUnCry1">
+                    <div class="tableWrap">
+                        <table>
+                            <thead class="gradientBlue">
+                                <tr>
+                                    <th>商店名稱</th>
+                                    <th>道具名稱</th>
+                                    <th>slot</th>
+                                    <th class="sort1 sort__default" sort_by="itemPrice">單價<span></span></th>
+                                    <th class="sort1 sort__default" sort_by="itemCNT">數量<span></span></th>
+                                    <th>收購/販售</th>
+                                </tr>
+                            </thead>
+                            <tbody id="_tbody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="result result--history">
+                <h4 id="history_title">歷史成交紀錄查詢</h4>
+                <p><span id="history_date_range"></span></p>
+
+                <div class="noResult" id="PoringCry2" style="display:none">
+                    <img src="https://static.gnjoy.com.tw/TRO/event/roShopSearch/img/poringcry.png" class="PoringCryImg" alt="">
+                    <h4><span id="PoringCry2Msg"></span>查無資料！</h4>
+                </div>
+                <div class="result--table" id="PoringUnCry2">
+                    <div class="tableWrap">
+                        <table>
+                            <thead class="gradientBlue">
+                                <tr>
+                                    <th>道具名稱</th>
+                                    <th>slot</th>
+                                    <th class="sort2 sort__default" sort_by="SumitemCNT">成交數量<span></span></th>
+                                    <th class="sort2 sort__default" sort_by="MinPrice">最低成交單價<span></span></th>
+                                    <th class="sort2 sort__default" sort_by="AvgPrice">平均成交單價<span></span></th>
+                                    <th class="sort2 sort__default" sort_by="MaxPrice">最高成交單價<span></span></th>
+                                    <th>成交資訊</th>
+                                </tr>
+                            </thead>
+                            <tbody id="_tbody_h"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="result result--chart">
+                <h4 id="chart_title">平均成交價格趨勢</h4>
+                <div>
+                    <p id="p_chart_title_itemName"><span id="chart_title_itemName"></span></p>
+                    <span id="ChartArea"><canvas id="itemDealChart"></canvas></span>
+                </div>
+            </section>
+
+            <section class="result result--historyDetail">
+                <h4 id="historyDetail_title">成交資訊</h4>
+                <p><span><input type="checkbox" id="chb_GroupByMap" checked /><label for="chb_GroupByMap"> 成交資訊區分地圖</label></span></p>
+
+                <div class="noResult" id="PoringCry4" style="display:none">
+                    <img src="https://static.gnjoy.com.tw/TRO/event/roShopSearch/img/poringcry.png" class="PoringCryImg" alt="">
+                    <h4><span id="PoringCry4Msg"></span>查無資料！</h4>
+                </div>
+                <div class="result--table" id="PoringUnCry4">
+                    <div class="tableWrap">
+                        <table>
+                            <thead class="gradientBlue">
+                                <tr>
+                                    <th class="sort3 sort__default" sort_by="itemPrice_a">成交單價<span></span></th>
+                                    <th class="sort3 sort__default" sort_by="itemCNT">成交數量<span></span></th>
+                                    <th class="sort3 sort__default" sort_by="regDate_">成交日期<span></span></th>
+                                    <th>資訊</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody_DealDetail"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <nav>
+                <ul class="pagination">
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                    <li class="active">
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <section class="notice" id="notice"></section>
+        <div class="totop"></div>
+
+        <!-- pop up start -->
+        <div class="overlay"></div>
+        <div class="popup__itemInfo">
+            <div class="title gradientBlue">
+                <h4 id="title_itemInfo">商店資訊</h4>
+            </div>
+            <div class="itemInfo--switch">
+                <p data-tab="tab1" id="tab1">露天商店資訊</p>
+                <p data-tab="tab2" id="tab2">販售資訊</p>
+                <p data-tab="tab3" id="tab3">道具說明</p>
+            </div>
+            <div class="noResult" id="PoringCry3" style="display:none">
+                <img src="https://static.gnjoy.com.tw/TRO/event/roShopSearch/img/poringcry.png" class="PoringCryImg" alt="">
+                <h4><span id="PoringCry3Msg"></span>查無資料！</h4>
+            </div>
+            <div class="itemInfo--text" data-tab="tab1" id="PoringUnCry3a">
+                <ul id="ul_StoreInfo"></ul>
+            </div>
+            <div class="itemInfo--text" data-tab="tab2" id="PoringUnCry3b">
+                <ul id="ul_SellItemInfo"></ul>
+            </div>
+            <div class="itemInfo--text" data-tab="tab3" id="PoringUnCry3c">
+                <ul id="ul_Default_ItemDetail"></ul>
+            </div>
+            <div class="close">
+                <p class="gradientYellow">關閉</p>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <iframe id="FOOTER" src="https://event.gnjoy.com.tw/loadTemplate/RO_footer_light/footer_lee.html" width="100%"
+                scrolling="No" frameborder="no" allowtransparency="true"></iframe>
+        <link rel="stylesheet" href="https://static.gnjoy.com.tw/event_core/loadTemplate/RO_footer_light/css/footer_height.css">
+    </footer>
+
+
+    <script src="https://static.gnjoy.com.tw/js/troSideBtn.js"></script>
+    <script src="https://static.gnjoy.com.tw/js/jquery-3.5.1.min.js"></script>
+    <script src="/js/Ro/RoShopSearch/pagination4.js?v=230904e"></script>
+    <script src="https://static.gnjoy.com.tw/js/jquery-ui.min.js"></script>
+    <script src="https://static.gnjoy.com.tw/js/sweetalert2.min.js"></script>
+    <script src="https://static.gnjoy.com.tw/js/promise.min.js"></script>
+    <script src="https://static.gnjoy.com.tw/js/jquery.colorbox-min.js"></script>
+    <!-- <script src="https://static.gnjoy.com.tw/TRO/event/roShopSearch/lib/net_npm_chart_v4_3_0.js"></script> -->
+    <script src1="https://static.gnjoy.com.tw/TRO/event/roShopSearch/js/common.js"></script>
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8H9o_dVTJalFoPLMvqGnA-iKPwVHr8QdzfnfqVhu8bKWxdW7SfjICpqvs6WNWy7Y2KrnN0lltJ7RORsi5a5g-a4WQImhMkoiYafx_YdEzHsGO-Z-5lBctj0lXDgY3bYziWClz7ZWfTnBVvQBrpW37Nw" />
+
+    <!-- <script>
+        var CaptchaCallback = function () {
+            let reCAPTCHA_Policy_c = $('<p>').html('<center>本網站受 reCAPTCHA 保護<br>適用 Google ' +
+                '<a target = "_blank" href="https://policies.google.com/privacy">隱私權政策</a> 與 ' +
+                '<a target = "_blank" href="https://policies.google.com/terms">服務條款</a>').css('font-size', '12px');
+
+            if ($('#logined_recapa_v2_hid').length) {
+                grecaptcha.render("logined_recapa_v2_hid", {
+                    "sitekey": "6Lf6hXImAAAAAKXpo8jjyHDZ-0o6hAiM8uOPsNBp", // v2 隱形
+                    "size": "invisible",
+                    "callback": grecaptcha_callback
+                });
+                // 在使用者流程中加入 reCAPTCHA 品牌宣傳元素，才可隱藏徽章
+                $('#logined_recapa_v2_hid').after(reCAPTCHA_Policy_c);
+                $('.grecaptcha-badge').hide();
+                console.log('logined_recapa_v2_hid' + ' render');
+            }
+        }
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&render=explicit" async defer></script> -->
+
+    <script>
+        //露天商店查詢結果--道具資訊POPUP
+        $(function () {
+            let overlay = $('.overlay'),
+                popupWindow = $('.popup__itemInfo'),
+                popupWindow__text = $('.popup__itemInfo .itemInfo--text'),
+                body = $('body');
+            /*
+            $('.shopName').on('click', function () {
+                overlay.addClass('show');
+                popupWindow.addClass('show');
+                body.css('overflow', 'hidden');
+
+                popupWindow__text.first().show().scrollTop(0).siblings('.itemInfo--text').hide();
+                $('p[data-tab="tab1"]').addClass('active').siblings().removeClass('active');
+            })
+            */
+
+            $('.popup__itemInfo .close, .overlay').click(function () {
+                overlay.removeClass('show');
+                popupWindow.removeClass('show');
+                body.css('overflow', 'auto');
+            })
+
+            $('.popup__itemInfo .itemInfo--switch').find('p').click(function () {
+                let tab = $(this).data('tab');
+
+                $(this).addClass('active');
+                $(this).siblings().removeClass('active');
+                $(".itemInfo--text[data-tab='" + tab + "']").show().scrollTop(0).siblings('.itemInfo--text').hide();
+            })
+        })
+
+        // 自訂下拉式選單樣式
+        function searchArea__select() {
+            $(document).on('click', function (e) {
+                let dropdownBtns = $('.default__option');
+                let dropdownLists = $('.select__wrap');
+
+                dropdownBtns.each(function (index) {
+                    let dropdownBtn = $(this);
+                    let dropdownList = $(dropdownLists[index]);
+
+                    if (!dropdownBtn.is(e.target) && !dropdownList.has(e.target).length) {
+                        dropdownList.removeClass('open');
+                    }
+                })
+            });
+
+            $('.default__option').on('click', function () {
+                $(this).parent().toggleClass('open');
+            })
+
+            $('.select__ol li').on('click', function () {
+                let currentele = $(this).html();
+                $(this).parents('.select__wrap').find('.default__option').html(currentele).attr('_val', $(this).val());
+                $(this).parents('.select__wrap').removeClass('open');
+
+                if ($(this).parents('.select__wrap').hasClass('selectSrv')) {
+                    saveRO1Svr();
+                }
+            })
+        }
+        searchArea__select();
+
+        function clearInput() {
+            let input = $('.input__wrap input'),
+                clearIcon = $('.input__wrap .clear');
+
+            clearIcon.hide();
+
+            input.on('input', function () {
+                let inputVal = $(this).val();
+                if (inputVal !== '') {
+                    clearIcon.show();
+                } else {
+                    clearIcon.hide();
+                }
+            })
+
+            clearIcon.on('click', function () {
+                input.val('');
+                clearIcon.hide();
+            })
+        }
+        clearInput();
+
+        // 露天商店查詢結果--價格顏色標示
+        function priceColors(e) {
+            let priceText = $(e).children('span'),
+                priceNumber = priceText.text().toString();
+
+            // 排除尾巴
+            priceNumber = priceNumber.replace(' ', '');
+            priceNumber = priceNumber.replace('Z', '');
+
+            let priceLength = priceNumber.length;
+
+            if (priceLength >= 1 && priceLength <= 13) {
+                priceText.addClass('priceColor_' + priceLength);
+            }
+        }
+        function priceColorsAll() {
+            $('.price').each(function () {
+                priceColors(this);
+            });
+        }
+
+        // 露天商店查詢結果--收購&販售顏色標示
+        function buySellColors() {
+            $('.buySell').each(function () {
+                let buySellText = $(this).children('span').text(),
+                    red = '#f75656',
+                    blue = '#2c72e4';
+
+                if (buySellText == '收購') {
+                    $(this).css('color', red)
+                } else if (buySellText == '販售') {
+                    $(this).css('color', blue)
+                } else {
+                    $(this).css('color', '#222222')
+                }
+            })
+
+        }
+        buySellColors();
+
+        $(function () {
+            $('.totop').click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 500);
+            })
+
+            function showScroll() {
+                let windowWidth = $(window).width();
+
+                if (windowWidth > 768) {
+                    let h = $(document).scrollTop();
+                    if (h >= 416) {
+                        $('.totop').addClass('show_l');
+                    } else {
+                        $('.totop').removeClass('show_l');
+                    }
+                } else {
+                    $('.totop').removeClass('show_l');
+                }
+            }
+            showScroll();
+            $(window).on('scroll', showScroll);
+            $(window).on('resize', showScroll);
+        })
+
+        // load注意事項
+        $(function () {
+            $('#notice').load('RoShopSearch/notice'); // 只有首頁相對路徑不一樣
+        })
+
+        function get_ItemGradeLevel_c(ItemGradeLevel) {
+            let ItemGradeLevel_c = '';
+            switch (ItemGradeLevel) {
+                case 0:
+                    ItemGradeLevel_c = '';
+                    break;
+                case 1:
+                    ItemGradeLevel_c = 'D階';
+                    break;
+                case 2:
+                    ItemGradeLevel_c = 'C階';
+                    break;
+                case 3:
+                    ItemGradeLevel_c = 'B階';
+                    break;
+                case 4:
+                    ItemGradeLevel_c = 'A階';
+                    break;
+            }
+            return ItemGradeLevel_c;
+        }
+
+        function get_itemName3(item) {
+            let itemName3 = '';
+
+            if (item.itemRefining > 0) {
+                itemName3 = '+' + item.itemRefining + ' ';
+            }
+
+            let ItemGradeLevel_c = get_ItemGradeLevel_c(item.ItemGradeLevel);
+            if (ItemGradeLevel_c) {
+                itemName3 += ItemGradeLevel_c + ' ';
+            }
+
+            itemName3 += item.itemName;
+
+            if (item.slot_1) {
+                itemName3 += ' ' + item.slot_1;
+            }
+            if (item.slot_2) {
+                itemName3 += ' ' + item.slot_2;
+            }
+            if (item.slot_3) {
+                itemName3 += ' ' + item.slot_3;
+            }
+            if (item.slot_4) {
+                itemName3 += ' ' + item.slot_4;
+            }
+            return itemName3;
+        }
+
+        let Action = '';
+
+        function check_Nd_recaptcha() {
+            let Ajax_url = 'RoShopSearch/forAjax_Nd_recaptcha';
+            $.ajax({
+                async: false,
+                type: "POST",
+                url: Ajax_url,
+                contentType: "application/json; charset=utf-8", // 送出的
+                data: null,
+                dataType: "json",
+                success: function (response) {
+                    if (response) {
+                        //console.log('需要驗證');
+                        grecaptcha.execute(0);
+                    }
+                    else {
+                        //console.log('不需驗證');
+                        grecaptcha_callback();
+                    }
+                }
+            });
+        }
+
+        $('#searchBtn').click(function (e) {
+            e.preventDefault();
+
+            Action = 'searchBtn';
+            check_Nd_recaptcha();
+        })
+
+        document.onkeyup = function (e) {
+            var code = e.charCode || e.keyCode;
+            if (code == 13) {
+                e.preventDefault();
+
+                Action = 'keyCode13';
+                check_Nd_recaptcha();
+            }
+        }
+
+        function read_target_page() {
+            Action = 'read_target_page';
+            check_Nd_recaptcha();
+        }
+
+        function grecaptcha_callback() {
+            if (Action == 'sort1' ||
+                Action == 'sort2' ||
+                Action == 'sort3' ||
+                Action == 'searchBtn' ||
+                Action == 'keyCode13' ||
+                Action == 'topKeyword'
+            ) {
+                // row_start reset
+                row_start = 1;
+            }
+            if (Action == 'read_target_page') {
+                // row_start keep
+            }
+
+            if (Action == 'sort1') { searchBtn_stores(); }
+            if (Action == 'sort2') { searchBtn_history(); }
+            if (Action == 'sort3') { history_a_item_DealDetail(temp_itemID2); }
+
+            if (Action == 'searchBtn' ||
+                Action == 'keyCode13' ||
+                Action == 'topKeyword'
+            ) {
+                if ($('#searchTab1').is(':checked')) { searchBtn_stores(); }
+                if ($('#searchTab2').is(':checked')) { searchBtn_history(); }
+            }
+            if (Action == 'read_target_page') {
+                if ($('#searchTab1').is(':checked')) { searchBtn_stores(); }
+                if ($('#searchTab2').is(':checked')) { history_a_item_DealDetail(temp_itemID2); }
+            }
+        }
+
+        let sort1_sort_by = 'itemPrice';
+        let sort2_sort_by = 'SumitemCNT';
+        let sort3_sort_by = 'regDate_';
+
+        let sort1_sort_desc = '';
+        let sort2_sort_desc = 'desc';
+        let sort3_sort_desc = 'desc';
+
+        $('.sort1').on('click', function (e) {
+            if (sort1_sort_by == $(this).attr('sort_by')) {
+                if (sort1_sort_desc == 'desc') { sort1_sort_desc = ''; } else { sort1_sort_desc = 'desc'; }
+            }
+            else {
+                sort1_sort_by = $(this).attr('sort_by');
+            }
+            //searchBtn_stores();
+            Action = 'sort1';
+            check_Nd_recaptcha();
+
+            sort_style('sort1', sort1_sort_by, sort1_sort_desc);
+        })
+        $('.sort2').on('click', function (e) {
+            if (sort2_sort_by == $(this).attr('sort_by')) {
+                if (sort2_sort_desc == 'desc') { sort2_sort_desc = ''; } else { sort2_sort_desc = 'desc'; }
+            }
+            else {
+                sort2_sort_by = $(this).attr('sort_by');
+            }
+            //searchBtn_history();
+            Action = 'sort2';
+            check_Nd_recaptcha();
+
+            sort_style('sort2', sort2_sort_by, sort2_sort_desc);
+        })
+        $('.sort3').on('click', function (e) {
+            if (sort3_sort_by == $(this).attr('sort_by')) {
+                if (sort3_sort_desc == 'desc') { sort3_sort_desc = ''; } else { sort3_sort_desc = 'desc'; }
+            }
+            else {
+                sort3_sort_by = $(this).attr('sort_by');
+            }
+            //history_a_item_DealDetail(temp_itemID2);
+            Action = 'sort3';
+            check_Nd_recaptcha();
+
+            sort_style('sort3', sort3_sort_by, sort3_sort_desc);
+        })
+        function sort_style(_class, sort_by, sort_desc) {
+            $("." + _class).each(function (index) {
+                $(this).removeClass('sort__reverse');
+                $(this).removeClass('sort__forward');
+                $(this).removeClass('sort__default');
+                if ($(this).attr('sort_by') == sort_by) {
+                    if (sort_desc == 'desc') {
+                        $(this).addClass('sort__forward'); // 下
+                    }
+                    else {
+                        $(this).addClass('sort__reverse'); // 上
+                    }
+                }
+                else {
+                    $(this).addClass('sort__default');
+                }
+            });
+        }
+        sort_style('sort1', sort1_sort_by, sort1_sort_desc);
+        sort_style('sort2', sort2_sort_by, sort2_sort_desc);
+        sort_style('sort3', sort3_sort_by, sort3_sort_desc);
+
+        function Log2DataList() {
+            $('#dal_KeyWord').empty();
+
+            let Ajax_url = 'RoShopSearch/forAjax_Log2DataList';
+            $.ajax({
+                //async: false,
+                type: "POST",
+                url: Ajax_url,
+                contentType: "application/json; charset=utf-8", // 送出的
+                data: null,
+                dataType: "json",
+                success: function (response) {
+                    $('#dal_KeyWord').empty();
+                    //console.log(response);
+                    for (let index in response.dt) {
+                        let item = response.dt[index];
+                        //$('#dal_KeyWord').append($('<option>').val(item.QueryKeyWord).text(item.QueryKeyWord));
+                        $('#topKeywords').append($('<span>').addClass('topKeyword').text(item.QueryKeyWord));
+                    }
+
+                    $('.topKeyword').on('click', function (e) {
+                        $('#txb_KeyWord').val($(this).text());
+                        if ($('#div_svr').attr('_val') &&
+                            $('#div_svr').attr('_val') != '0') {
+                            // 效果不好，先不判斷
+                        }
+
+                        Action = 'topKeyword';
+                        check_Nd_recaptcha();
+
+                        $('.input__wrap .clear').show();
+                    })
+                }
+            });
+        }
+        Log2DataList();
+
+        function get_svr_c(svr_n) {
+            let svr_c = '';
+            switch (svr_n) {
+                case '2290':
+                    svr_c = '巴基利';
+                    break;
+                case '3290':
+                    svr_c = '查爾斯';
+                    break;
+                case '4290':
+                    svr_c = '波利';
+                    break;
+                case '829':
+                    svr_c = '羅札納';
+                    break;
+            }
+            return svr_c;
+        }
+
+        /*
+        function get_NotFoundMsg() {
+            let MsgKeyWord = $('#txb_KeyWord').val();
+            if (MsgKeyWord.length > 10) { MsgKeyWord = MsgKeyWord.substring(0, 10) + '..'; }
+            return '「' + get_svr_c($('#div_svr').attr('_val')) + '」<br>「' + MsgKeyWord + '」<br>';
+        }
+        */
+
+        function searchBtn_stores() {
+            $('#_tbody').empty();
+
+            let inputData = {
+                div_svr: $('#div_svr').attr('_val'),
+                div_storetype: $('#div_storetype').attr('_val'),
+                txb_KeyWord: $('#txb_KeyWord').val(),
+                row_start: row_start.toString(),
+                recaptcha: grecaptcha.getResponse(0),
+                sort_by: sort1_sort_by,
+                sort_desc: sort1_sort_desc,
+                __RequestVerificationToken: $('input[name="__RequestVerificationToken"]').val()
+            };
+            grecaptcha.reset(0);
+            $('.grecaptcha-badge').hide();
+            // 偽下拉，空值會變字串 0
+            if (!inputData.div_svr || inputData.div_svr == '0') {
+                swal('請選擇伺服器');
+                return;
+            }
+            if (!inputData.div_storetype) {
+                swal('請選擇商店類型');
+                return;
+            }
+            if (!inputData.txb_KeyWord) {
+                swal('請輸入關鍵字');
+                return;
+            }
+            //console.log(inputData);
+            $('#shop_range').text('');
+
+            let Ajax_url = 'RoShopSearch/forAjax_shopDeal';
+            $.ajax({
+                //async: false,
+                type: "POST",
+                url: Ajax_url,
+                contentType: "application/json; charset=utf-8", // 送出的
+                data: JSON.stringify(inputData),
+                dataType: "json",
+                success: function (response) {
+                    $('#_tbody').empty();
+                    //console.log(response);
+                    if (response.Message) {
+                        swal(response.Message);
+                        return;
+                    }
+
+                    $('#shop_range').append($('<p>').text('查詢伺服器：' + get_svr_c($('#div_svr').attr('_val'))));
+                    $('#shop_range').append($('<p>').text('道具關鍵字：' + $('#txb_KeyWord').val()));
+
+                    $('.welcome').hide();
+                    $('.result--shop').show();
+                    $('.pagination').hide();
+                    $('.result--history').hide();
+                    $('.result--chart').hide();
+                    $('.result--historyDetail').hide();
+
+                    if (response.dt.length == 0) {
+                        //swal('查無資料');
+                        //$('#PoringCry1Msg').html(get_NotFoundMsg());
+                        //$('.PoringCryImg').css('transform', 'rotate(' + Math.floor(Math.random() * 15 * 2 - 15) + 'deg)');
+                        $('#PoringCry1').show();
+                        $('#PoringUnCry1').hide();
+                        return;
+                    }
+                    else {
+                        $('#PoringCry1').hide();
+                        $('#PoringUnCry1').show();
+                    }
+
+                    temp_token = response.token;
+
+                    for (let index in response.dt) {
+                        let item = response.dt[index];
+
+                        let tr = $('<tr>');
+
+                        let td_shopName = $('<td>').addClass('shopName').text(item.storeName).attr('SSI', item.SSI2);
+
+                        let td_itemName = $('<td>').addClass('itemName').text(get_itemName3(item)).attr('SSI', item.SSI2);
+
+                        let td_slot = $('<td>').addClass('slot').text(item.DefaultSlotCount ? item.DefaultSlotCount : '-');
+                        let td_quantity = $('<td>').addClass('quantity').attr('align', 'center').text(Intl.NumberFormat().format(item.itemCNT));
+
+                        let price_with_cama = Intl.NumberFormat().format(item.itemPrice);
+
+                        let td_price = $('<td>').addClass('price')
+                            .append(
+                                $('<span>').text(price_with_cama)//.addClass('priceColor_' + price_with_cama.length)
+                            )
+                            .append(
+                                $('<z>').text(' Z')
+                            );
+                        let td_buySell = $('<td>').addClass('buySell')
+                            .append(
+                                $('<span>').text(item.storetype == 0 ? '販售' : '收購')
+                            );
+
+                        tr.append(td_shopName);
+                        tr.append(td_itemName);
+                        tr.append(td_slot);
+                        tr.append(td_price);
+                        tr.append(td_quantity);
+                        tr.append(td_buySell);
+
+                        $('#_tbody').append(tr);
+                    }
+                    priceColorsAll();
+                    buySellColors();
+
+                    $('.shopName').on('click', function () {
+                        a_store($('#div_svr').attr('_val'), $(this).attr('SSI'));
+                    })
+
+                    dt_rows_max = response.dt2[0].count;
+                    printPageArea();
+                    if (parseInt(dt_rows_max) <= 30) {
+                        $('.pagination').hide();
+                    }
+                    else {
+                        $('.pagination').show();
+                    }
+
+                    if (row_start != 1) {
+                        $('html, body').animate({
+                            scrollTop: $('#PoringUnCry1').offset().top
+                        }, 500);
+                    }
+                    else {
+                        //看的到熱門關鍵字的區塊
+                        //scrollTop: $('.mainContent').offset().top
+
+                        //只顯示查詢結果的區塊
+                        $('html, body').animate({
+                            scrollTop: $('.result--shop').offset().top
+                        }, 500);
+                    }
+                }
+            });
+        }
+
+        function a_store(svr, SSI) {
+            $('#ul_StoreInfo').empty();
+            $('#ul_SellItemInfo').empty();
+            $('#ul_Default_ItemDetail').empty();
+
+            let inputData = {
+                div_svr: svr,
+                SSI: SSI,
+                token: temp_token
+            };
+            let Ajax_url2 = 'RoShopSearch/forAjax_shopDeal_a_store';
+            $.ajax({
+                //async: false,
+                type: "POST",
+                url: Ajax_url2,
+                contentType: "application/json; charset=utf-8", // 送出的
+                data: JSON.stringify(inputData),
+                dataType: "json",
+                success: function (response) {
+                    $('#ul_StoreInfo').empty();
+                    $('#ul_SellItemInfo').empty();
+                    //console.log(response);
+                    if (response.Message) {
+                        swal(response.Message);
+                        return;
+                    }
+                    
+                    if (response.dt.length == 0) {
+                        swal('查無資料');
+                        return;
+                    }
+
+                    for (let index in response.dt) {
+                        let item = response.dt[index];
+
+                        temp_itemID = item.itemID_e;
+
+                        let td_itemName = $('<div>').text(get_itemName3(item));
+                        let td_shopName = $('<div>').text(item.storeName);
+                        let td_where = $('<div>');
+                        let mapName = (item.mapName ? item.mapName.replace('.gat', '') : '');
+                        td_where.append($('<span>').attr('id', 'copyNaviText').text(mapName + ' ' + item.xPos + '/' + item.yPos));
+                        td_where.append($('<span>').text(' '));
+                        td_where.append($('<span>').addClass('copy').attr('id', 'copyNaviMsg').text('複製'));
+
+                        let td_quantity = $('<div>').text(item.itemCNT);
+                        let td_ItemSellerCharName = $('<div>').text(item.ItemSellerCharName);
+
+                        let price_with_cama = Intl.NumberFormat().format(item.itemPrice);
+
+                        let td_price = $('<div>').addClass('price')
+                            .append(
+                                $('<span>').text(price_with_cama)//.addClass('priceColor_' + price_with_cama.length)
+                            )
+                            .append(
+                                $('<z>').text(' Z')
+                            );
+                        let td_buySell = $('<div>').addClass('buySell')
+                            .append(
+                                $('<span>').text(item.storetype == 0 ? '販售' : '收購')
+                            );
+
+                        let tr2 = $('<li>');
+                        tr2.append($('<div>').text('商店名稱'));
+                        tr2.append(td_shopName);
+
+                        let tr7 = $('<li>');
+                        tr7.append($('<div>').text('角色名稱'));
+                        tr7.append(td_ItemSellerCharName);
+
+                        let tr1 = $('<li>');
+                        tr1.append($('<div>').text('道具名稱'));
+                        tr1.append(td_itemName);
+
+                        let tr3 = $('<li>');
+                        tr3.append($('<div>').text('商店座標'));
+                        tr3.append(td_where);
+
+                        let tr4 = $('<li>');
+                        tr4.append($('<div>').text('單價'));
+                        tr4.append(td_price);
+
+                        let tr5 = $('<li>');
+                        tr5.append($('<div>').text('數量'));
+                        tr5.append(td_quantity);
+
+                        let tr6 = $('<li>');
+                        tr6.append($('<div>').text('收購/販售'));
+                        tr6.append(td_buySell);
+
+                        $('#ul_StoreInfo').append(tr2);
+                        $('#ul_StoreInfo').append(tr7);
+                        $('#ul_StoreInfo').append(tr1);
+                        $('#ul_StoreInfo').append(tr3);
+                        $('#ul_StoreInfo').append(tr4);
+                        $('#ul_StoreInfo').append(tr5);
+                        $('#ul_StoreInfo').append(tr6);
+                    }
+
+                    $('.copy').on('click', function (e) {
+                        copyToClipboard1($('#copyNaviText').text());
+                    });
+
+                    for (let index in response.dt) {
+                        let item = response.dt[index];
+
+                        let td_itemName = $('<div>').text(get_itemName3(item));
+                        let td_slot = $('<div>').text(item.DefaultSlotCount ? item.DefaultSlotCount : '-');
+                        let td_itemRefining = $('<div>').text(item.itemRefining ? item.itemRefining : '-');
+
+                        let slots_html = '';
+                        let slots = [];
+                        item.slot_1 ? slots.push(item.slot_1) : null;
+                        item.slot_2 ? slots.push(item.slot_2) : null;
+                        item.slot_3 ? slots.push(item.slot_3) : null;
+                        item.slot_4 ? slots.push(item.slot_4) : null;
+
+                        for (i = 0; i < slots.length; i++) {
+                            if (i != 0) { slots_html += '<br>'; }
+                            slots_html += slots[i];
+                        }
+                        if (slots.length == 0) { slots_html = '-'; }
+
+                        let RandomOpts_html = '';
+                        let RandomOpts = [];
+                        item.RandomOpt1 ? RandomOpts.push(item.RandomOpt1) : null;
+                        item.RandomOpt2 ? RandomOpts.push(item.RandomOpt2) : null;
+                        item.RandomOpt3 ? RandomOpts.push(item.RandomOpt3) : null;
+                        item.RandomOpt4 ? RandomOpts.push(item.RandomOpt4) : null;
+                        item.RandomOpt5 ? RandomOpts.push(item.RandomOpt5) : null;
+
+                        for (i = 0; i < RandomOpts.length; i++) {
+                            if (i != 0) { RandomOpts_html += '<br>'; }
+                            RandomOpts_html += RandomOpts[i];
+                        }
+                        if (RandomOpts.length == 0) { RandomOpts_html = '-'; }
+
+                        let td_slots = $('<div>').html(slots_html);
+                        let td_RandomOpts = $('<div>').html(RandomOpts_html);
+
+                        if (item.itemType == 0) {
+                            let tr1 = $('<li>');
+                            tr1.append($('<div>').text('精煉'));
+                            tr1.append(td_itemRefining);
+
+                            $('#ul_SellItemInfo').append(tr1);
+                        }
+
+                        if (item.itemType == 0 && item.flag_240206a != 'Y') {
+                            let ItemGradeLevel_c = get_ItemGradeLevel_c(item.ItemGradeLevel);
+                            let td_ItemGradeLevel = $('<div>').text(ItemGradeLevel_c ? ItemGradeLevel_c : '-');
+                            let tr4 = $('<li>');
+                            tr4.append($('<div>').text('階級'));
+                            tr4.append(td_ItemGradeLevel);
+
+                            $('#ul_SellItemInfo').append(tr4);
+                        }
+
+                        let tr5 = $('<li>');
+                        tr5.append($('<div>').text('道具名稱'));
+                        tr5.append(td_itemName);
+                        $('#ul_SellItemInfo').append(tr5);
+
+                        if (item.itemType == 0) {
+                            let tr6 = $('<li>');
+                            tr6.append($('<div>').text('slot'));
+                            tr6.append(td_slot);
+
+                            $('#ul_SellItemInfo').append(tr6);
+                        }
+
+                        if (item.itemType == 0) {
+                            let tr2 = $('<li>');
+                            tr2.append($('<div>').text('卡片/附魔'));
+                            tr2.append(td_slots);
+
+                            let tr3 = $('<li>');
+                            tr3.append($('<div>').text('附加能力'));
+                            tr3.append(td_RandomOpts);
+
+                            $('#ul_SellItemInfo').append(tr2);
+                            $('#ul_SellItemInfo').append(tr3);
+                        }
+
+                        $('#ul_Default_ItemDetail').empty();
+                        Default_ItemDetail(item.itemID_e);
+                        Default_ItemDetail2(1, item.slot_1_e);
+                        Default_ItemDetail2(2, item.slot_2_e);
+                        Default_ItemDetail2(3, item.slot_3_e);
+                        Default_ItemDetail2(4, item.slot_4_e);
+                    }
+
+                    let overlay = $('.overlay'),
+                        popupWindow = $('.popup__itemInfo'),
+                        popupWindow__text = $('.popup__itemInfo .itemInfo--text'),
+                        body = $('body');
+
+                    overlay.addClass('show');
+                    popupWindow.addClass('show');
+                    body.css('overflow', 'hidden');
+
+                    //popupWindow__text.first().show().scrollTop(0).siblings('.itemInfo--text').hide();
+                    $('#title_itemInfo').text('商店資訊');
+                    $('#PoringUnCry3a').show();
+                    $('#PoringUnCry3b').hide();
+                    $('#PoringUnCry3c').hide();
+                    $('#tab1').show();
+                    $('#tab2').show();
+                    $('#tab3').show();
+                    $('p[data-tab="tab1"]').addClass('active').siblings().removeClass('active');
+
+                    priceColorsAll();
+                    buySellColors();
+                }
+            });
+        }
+
+        function copyToClipboard1(text) {
+            let str = '/navi' + ' ' + text;
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val(str).select();
+            document.execCommand("copy");
+            $temp.remove();
+            $('#copyNaviMsg').text('已複製');
+        }
+
+        function Default_ItemDetail(itemID) {
+            let Ajax_url3 = 'RoShopSearch/forAjax_Default_ItemDetail_e';
+
+            let inputData3 = {
+                itemID: itemID.toString()
+            };
+            //console.log(inputData3);
+            //return;
+            $.ajax({
+                async: false,
+                type: "POST",
+                url: Ajax_url3,
+                contentType: "application/json; charset=utf-8", // 送出的
+                data: JSON.stringify(inputData3),
+                dataType: "json",
+                success: function (response) {
+                    //console.log(response);
+                    if (response.Message) {
+                        //swal(response.Message);
+                        return;
+                    }
+                    if (response.dt.length == 0) {
+                        //swal('查無資料');
+                        return;
+                    }
+
+                    let td_itemName = $('<div>').text('coming soon!');
+                    let td_itemSlotCount = $('<div>').append($('<p>').text('-'));
+                    let td_itemDetail = $('<div>').append($('<p>').text('coming soon!'));
+
+                    for (let index in response.dt) {
+                        let item = response.dt[index];
+
+                        td_itemName = $('<div>').text(item.identifiedDisplayName); // 純物品名稱
+                        td_itemSlotCount = $('<div>').append($('<p>').text(item.slotCount ? item.slotCount : '-'));
+                        td_itemDetail = $('<div>').append($('<p>').html(item.identifiedDescription ? item.identifiedDescription : 'coming soon!!'));
+                    }
+
+                    let tr5 = $('<li>');
+                    tr5.append($('<div>').text('道具名稱'));
+                    tr5.append(td_itemName);
+
+                    let tr3 = $('<li>');
+                    tr3.append($('<div>').text('slot'));
+                    tr3.append(td_itemSlotCount);
+
+                    let tr1 = $('<li>');
+                    tr1.append($('<div>').text('敘述'));
+                    tr1.append(td_itemDetail);
+
+                    $('#ul_Default_ItemDetail').append(tr5);
+                    $('#ul_Default_ItemDetail').append(tr3);
+                    $('#ul_Default_ItemDetail').append(tr1);
+                }
+            });
+        }
+
+        function Default_ItemDetail2(i, slot_c) {
+            let Ajax_url3 = 'RoShopSearch/forAjax_Default_ItemDetail2_e';
+
+            let inputData3 = {
+                slot_c: slot_c
+            };
+            if (!slot_c) { return; }
+            //console.log(inputData3);
+            //return;
+            $.ajax({
+                async: false,
+                type: "POST",
+                url: Ajax_url3,
+                contentType: "application/json; charset=utf-8", // 送出的
+                data: JSON.stringify(inputData3),
+                dataType: "json",
+                success: function (response) {
+                    //console.log(response);
+                    if (response.Message) {
+                        //swal(response.Message);
+                        return;
+                    }
+                    if (response.dt.length == 0) {
+                        //swal('查無資料');
+                        return;
+                    }
+
+                    let td_itemName = $('<div>').text('coming soon!');
+
+                    let td_itemDetail = $('<div>').append($('<p>').text('coming soon!'));
+
+                    for (let index in response.dt) {
+                        let item = response.dt[index];
+
+                        td_itemName = $('<div>').text(item.identifiedDisplayName); // 純物品名稱
+
+                        td_itemDetail = $('<div>').append($('<p>').html(item.identifiedDescription ? item.identifiedDescription : 'coming soon!!'));
+                    }
+
+                    let tr5 = $('<li>');
+                    tr5.append($('<div>').text('卡片/附魔' + i));
+                    tr5.append(td_itemName);
+
+                    let tr1 = $('<li>');
+                    tr1.append($('<div>').text('敘述'));
+                    tr1.append(td_itemDetail);
+
+                    $('#ul_Default_ItemDetail').append(tr5);
+                    $('#ul_Default_ItemDetail').append(tr1);
+                }
+            });
+        }
+
+        let DealDetail_mode = 0;
+
+        function searchBtn_history() {
+            $('#_tbody_h').empty();
+
+            let inputData = {
+                div_svr: $('#div_svr').attr('_val'),
+                div_history_days: $('#div_history_days').attr('_val'),
+                txb_KeyWord: $('#txb_KeyWord').val(),
+                recaptcha: grecaptcha.getResponse(0),
+                sort_by: sort2_sort_by,
+                sort_desc: sort2_sort_desc,
+                __RequestVerificationToken: $('input[name="__RequestVerificationToken"]').val()
+            };
+            grecaptcha.reset(0);
+            $('.grecaptcha-badge').hide();
+            // 偽下拉，空值會變字串 0
+            if (!inputData.div_svr || inputData.div_svr == '0') {
+                swal('請選擇伺服器');
+                return;
+            }
+            if (!inputData.div_history_days) {
+                swal('請選擇天數');
+                return;
+            }
+            if (!inputData.txb_KeyWord) {
+                swal('請輸入關鍵字');
+                return;
+            }
+            //console.log(inputData);
+            $('#chart_title').text(inputData.div_history_days + '天' + '平均成交價格趨勢');
+            $('#chart_title').append(
+                $('<span>').text('　')
+            );
+            $('#chart_title').append(
+                $('<span>').text('隱藏/顯示')
+                    .attr('id', 'span_hid_chart')
+                    .css({ 'font-size': 14, 'cursor': 'pointer' })
+            );
+
+            $('#span_hid_chart').on('click', function () {
+                $('#p_chart_title_itemName').toggle();
+                $('#chart_title_itemName').toggle();
+                $('#ChartArea').toggle();
+            });
+
+            $('#history_title').text(inputData.div_history_days + '天' + '歷史成交紀錄查詢');
+            $('#historyDetail_title').text(inputData.div_history_days + '天' + '成交資訊');
+            $('#history_date_range').text('');
+
+            let Ajax_url = 'RoShopSearch/forAjax_history';
+            $.ajax({
+                //async: false,
+                type: "POST",
+                url: Ajax_url,
+                contentType: "application/json; charset=utf-8", // 送出的
+                data: JSON.stringify(inputData),
+                dataType: "json",
+                success: function (response) {
+                    $('#_tbody_h').empty();
+                    //console.log(response);
+                    if (response.Message) {
+                        swal(response.Message);
+                        return;
+                    }
+
+                    if (response.dt.length == 30) {
+                        $('#history_date_range').text(response.sdate + ' ～ ' + response.edate + '，前 ' + response.dt.length + ' 筆');
+                    }
+                    else {
+                        $('#history_date_range').text(response.sdate + ' ～ ' + response.edate + '，' + response.dt.length + ' + ' + response.dt2.length + ' 筆');
+                    }
+                    $('#history_date_range').append($('<p>').text('查詢伺服器：' + get_svr_c($('#div_svr').attr('_val'))));
+                    $('#history_date_range').append($('<p>').text('道具關鍵字：' + $('#txb_KeyWord').val()));
+
+                    $('.welcome').hide();
+                    $('.result--shop').hide();
+                    $('.pagination').hide();
+                    $('.result--history').show();
+                    $('.result--chart').hide();
+                    $('.result--historyDetail').hide();
+
+                    if (response.dt.length == 0 && 
+                        response.dt2.length == 0) {
+                        //swal('查無資料');
+                        //$('#PoringCry2Msg').html(get_NotFoundMsg());
+                        //$('.PoringCrymg').css('transform', 'rotate(' + Math.floor(Math.random() * 15 * 2 - 15) + 'deg)');
+                        $('#PoringCry2').show();
+                        $('#PoringUnCry2').hide();
+                        $('.pagination').hide();
+                        return;
+                    }
+                    else {
+                        $('#PoringCry2').hide();
+                        $('#PoringUnCry2').show();
+                    }
+
+                    temp_token = response.token;
+
+                    for (let index in response.dt) {
+                        let item = response.dt[index];
+
+                        let tr = $('<tr>');
+
+                        //let td_shopName = $('<td>').addClass('shopName').text(item.storeName);
+                        let td_itemName = $('<td>').addClass('itemName').css('cursor', 'pointer').attr('itemID', item.itemID_e).text(item.itemName);
+                        let td_slot = $('<td>').addClass('slot').text(item.DefaultSlotCount ? item.DefaultSlotCount : '-');
+                        //let td_quantity = $('<td>').addClass('quantity').text(item.itemCNT);
+
+                        let td_quantity = $('<td>').addClass('quantity').attr('align', 'center').text(Intl.NumberFormat().format(item.SumitemCNT));
+                        let AvgPrice_with_cama = Intl.NumberFormat().format(item.AvgPrice);
+                        let MinPrice_with_cama = Intl.NumberFormat().format(item.MinPrice);
+                        let MaxPrice_with_cama = Intl.NumberFormat().format(item.MaxPrice);
+
+                        let td_AvgPrice = $('<td>').addClass('price').addClass('average')
+                            .append(
+                                $('<span>').text(AvgPrice_with_cama)//.addClass('priceColor_' + AvgPrice_with_cama.length)
+                            )
+                            .append(
+                                $('<z>').text(' Z')
+                            );
+
+                        let td_MinPrice = $('<td>').addClass('price').addClass('low')
+                            .append(
+                                $('<span>').text(MinPrice_with_cama)//.addClass('priceColor_' + MinPrice_with_cama.length)
+                            )
+                            .append(
+                                $('<z>').text(' Z')
+                            );
+
+                        let td_MaxPrice = $('<td>').addClass('price').addClass('high')
+                            .append(
+                                $('<span>').text(MaxPrice_with_cama)//.addClass('priceColor_' + MaxPrice_with_cama.length)
+                            )
+                            .append(
+                                $('<z>').text(' Z')
+                            );
+
+                        let td_detail = $('<td>').addClass('detail').attr('itemID', item.itemID_e).attr('SlotAt', item.SlotAt)
+                            .append(
+                                $('<a>')
+                                    .attr('href', '')
+                                    //.attr('target', '_blank')
+                                    .append(
+                                        $('<img>')
+                                            .attr('src', 'https://static.gnjoy.com.tw/TRO/event/roShopSearch/img/historydetailicon.svg')
+                                            .attr('alt', '成交資訊')
+                                    )
+                            );
+
+                        //tr.append(td_shopName);
+                        tr.append(td_itemName);
+                        tr.append(td_slot);
+                        tr.append(td_quantity);                        
+                        //tr.append(td_quantity);
+                        tr.append(td_MinPrice);
+                        tr.append(td_AvgPrice);
+                        tr.append(td_MaxPrice);
+                        tr.append(td_detail);
+
+                        $('#_tbody_h').append(tr);
+                    }
+
+                    for (let index in response.dt2) {
+                        let item = response.dt2[index];
+
+                        let tr = $('<tr>');
+
+                        //let td_shopName = $('<td>').addClass('shopName').text(item.storeName);
+                        //let SlotAt_c = '已插卡/附魔1';
+                        //let td_itemName = $('<td>').addClass('itemName').css('cursor', 'pointer').attr('itemID', item.itemID_e).text(SlotAt_c);
+                        let td_itemName = $('<td>').addClass('itemName').css('cursor', 'pointer').attr('itemID', item.itemID_e).text(item.itemName);
+                        let td_slot = $('<td>').addClass('slot').text(item.DefaultSlotCount ? item.DefaultSlotCount : '-');
+                        //let td_quantity = $('<td>').addClass('quantity').text(item.itemCNT);
+
+                        let td_quantity = $('<td>').addClass('quantity').attr('align', 'center').text('-');
+
+                        let td_AvgPrice = $('<td>').addClass('price').addClass('average')
+                            .append($('<span>').text('-'));
+                            //.append($('<z>').text(' Z'));
+
+                        let td_MinPrice = $('<td>').addClass('price').addClass('low')
+                            .append($('<span>').text('-'));
+                            //.append($('<z>').text(' Z'));
+
+                        let td_MaxPrice = $('<td>').addClass('price').addClass('high')
+                            .append($('<span>').text('-'));
+                            //.append($('<z>').text(' Z'));
+
+                        let td_detail = $('<td>').addClass('detail').attr('itemID', item.itemID_e).attr('SlotAt', item.SlotAt)
+                            .append(
+                                $('<a>')
+                                    .attr('href', '')
+                                    //.attr('target', '_blank')
+                                    .append(
+                                        $('<img>')
+                                            .attr('src', 'https://static.gnjoy.com.tw/TRO/event/roShopSearch/img/historydetailicon.svg')
+                                            .attr('alt', '成交資訊')
+                                    )
+                            );
+
+                        //tr.append(td_shopName);
+                        tr.append(td_itemName);
+                        tr.append(td_slot);
+                        tr.append(td_quantity);
+                        //tr.append(td_quantity);
+                        tr.append(td_MinPrice);
+                        tr.append(td_AvgPrice);
+                        tr.append(td_MaxPrice);
+                        tr.append(td_detail);
+
+                        $('#_tbody_h').append(tr);
+                    }
+
+                    $('.detail').on('click', function (e) {
+                        e.preventDefault();
+                        //console.log('go itemHistory itemID:' + $(this).attr('itemID'));
+
+                        let itemID = $(this).attr('itemID');
+                        temp_itemID2 = itemID;
+
+                        let SlotAt = $(this).attr('SlotAt');
+                        if (SlotAt == '0') {
+                            DealDetail_mode = 1;
+
+                            //history_a_item_AvgMinMax(itemID);
+                            history_a_item_GroupByDay(itemID);
+                            history_a_item_DealDetail(itemID);
+                            //history_a_item_DealDetail_count(itemID);
+
+                            $('.result--chart').show();
+                            $('.result--historyDetail').show();
+                        } 
+                        else {
+                            DealDetail_mode = 2;
+
+                            history_a_item_DealDetailSlot(itemID);
+
+                            $('.result--chart').hide();
+                            $('.result--historyDetail').show();
+                        }
+
+                        //錨點
+                        if (response.dt.length > 10) {
+                            //location.href = '#chart_title';
+                        }
+
+                        row_start = 1;
+                    })
+
+                    $('.itemName').on('click', function (e) {
+                        e.preventDefault();
+                        //console.log('go itemHistory itemID:' + $(this).attr('itemID'));
+
+                        let itemID = $(this).attr('itemID');
+                        temp_itemID2 = itemID;
+
+                        $('#ul_Default_ItemDetail').empty();
+                        Default_ItemDetail(itemID);
+
+                        let overlay = $('.overlay'),
+                            popupWindow = $('.popup__itemInfo'),
+                            popupWindow__text = $('.popup__itemInfo .itemInfo--text'),
+                            body = $('body');
+
+                        overlay.addClass('show');
+                        popupWindow.addClass('show');
+                        body.css('overflow', 'hidden');
+
+                        //popupWindow__text.first().show().scrollTop(0).siblings('.itemInfo--text').hide();
+                        $('#title_itemInfo').text('道具說明');
+                        $('#PoringUnCry3a').hide();
+                        $('#PoringUnCry3b').hide();
+                        $('#PoringUnCry3c').show();
+                        $('#tab1').hide();
+                        $('#tab2').hide();
+                        $('#tab3').hide();
+                        $('p[data-tab="tab3"]').addClass('active').siblings().removeClass('active');
+                    })
+
+                    priceColorsAll();
+                    //buySellColors();
+                }
+            });
+        }
+        let temp_itemID = '';
+        let temp_itemID2 = '';
+        let temp_token = '';
+
+        function history_a_item_GroupByDay(itemID) {
+            // 先清掉才可以重覆使用
+            $('#ChartArea').empty();
+            $('#ChartArea').append('<canvas id="itemDealChart"></canvas>');
+
+            $('#p_chart_title_itemName').show();
+            $('#chart_title_itemName').show();
+            $('#ChartArea').show();
+
+            const ctx = $('#itemDealChart');
+            const skipped = (ctx, value) => ctx.p0.skip || ctx.p1.skip ? value : undefined;
+            const ctxLineColor = '#4282e8';
+
+            let Ajax_url = 'RoShopSearch/forAjax_history_a_item_GroupByDay';
+
+            let inputData = {
+                div_svr: $('#div_svr').attr('_val'),
+                div_history_days: $('#div_history_days').attr('_val'),
+                itemID: itemID.toString(),
+                token: temp_token
+            };
+
+            if (inputData.div_history_days == '1') {
+                Ajax_url = 'RoShopSearch/forAjax_history_a_item_GroupByHour';
+            }
+
+            $.ajax({
+                //async: false,
+                type: "POST",
+                url: Ajax_url,
+                contentType: "application/json; charset=utf-8", // 送出的
+                data: JSON.stringify(inputData),
+                dataType: "json",
+                success: function (response) {
+                    //console.log(response);
+                    if (response.Message) {
+                        //swal(response.Message);
+                        return;
+                    }
+                    if (response.dt.length == 0) {
+                        //swal('查無資料');
+                        return;
+                    }
+
+                    let array_labels = [];
+                    let array_data = [];
+
+                    for (let index in response.dt) {
+                        let item = response.dt[index];
+                        array_labels.push(item.regDate_.replace('2023/', ''));
+                        array_data.push(item.AvgPrice);
+                    }
+
+                    /*
+                    if (ctx instanceof Chart) {
+                        ctx.destroy();
+                    }
+                    */
+
+                    new Chart(ctx, {
+                        type: 'line',
+                        data: {                            
+                            labels: array_labels,
+                            datasets: [{
+                                //label: 'itemName',                                
+                                data: array_data,
+                                borderWidth: 2.5,
+                                borderColor: ctxLineColor,
+                                backgroundColor: ctxLineColor,
+                                segment: {
+                                    borderColor: ctx => skipped(ctx, 'rgb(66, 130, 232, 0.5)'),
+                                    borderDash: ctx => skipped(ctx, [6, 6]),
+                                },
+                                spanGaps: true,
+                                fill: false,
+                                tension: 0.2,
+                            }]
+                        },
+                        options: {
+                            plugins: {
+                                legend: {
+                                    display: false,
+                                }
+                            }
+                        },
+                    });
+                }
+            });
+        }
+
+        function history_a_item_DealDetail(itemID) {
+            $('#tbody_DealDetail').empty();
+
+            let Ajax_url = 'RoShopSearch/forAjax_history_a_item_DealDetail';
+
+            let inputData = {
+                div_svr: $('#div_svr').attr('_val'),
+                div_history_days: $('#div_history_days').attr('_val'),
+                itemID: itemID.toString(),
+                row_start: row_start.toString(),
+                sort_by: sort3_sort_by,
+                sort_desc: sort3_sort_desc,
+                GroupByMap: $('#chb_GroupByMap').is(':checked').toString(),
+                token: temp_token
+            };
+
+            $.ajax({
+                //async: false,
+                type: "POST",
+                url: Ajax_url,
+                contentType: "application/json; charset=utf-8", // 送出的
+                data: JSON.stringify(inputData),
+                dataType: "json",
+                success: function (response) {
+                    $('#tbody_DealDetail').empty();
+                    //console.log(response);
+                    if (response.Message) {
+                        swal(response.Message);
+                        return;
+                    }
+                    if (response.dt.length == 0) {
+                        //swal('查無資料');
+                        $('#PoringCry4').show();
+                        $('#PoringUnCry4').hide();
+                        $('.pagination').hide();
+                        return;
+                    }
+                    else {
+                        $('#PoringCry4').hide();
+                        $('#PoringUnCry4').show();
+                    }
+
+                    for (let index in response.dt) {
+                        let item = response.dt[index];
+
+                        let tr = $('<tr>');
+                        let td_quantity = $('<td>').addClass('quantity').attr('align', 'center').text(Intl.NumberFormat().format(item.itemCNT));
+                        let td_regDate = $('<td>').addClass('date').text(item.regDate_);
+                        let td_info = $('<td>').addClass('info');
+                        let div_info = $('<div>');
+                        let ul_info1 = $('<ul>');
+                        let ul_info2 = $('<ul>');
+                        let ul_info3 = $('<ul>');
+                        let ul_info4 = $('<ul>');
+                        let ul_info5 = $('<ul>');
+
+                        if (item.itemType == 0 && item.flag_240206b != 'Y') {
+                            ul_info1.append($('<li>').text('精煉'));
+                            ul_info1.append($('<li>').text(item.itemRefining > 0 ? '+' + item.itemRefining : '-'));
+
+                            div_info.append(ul_info1);
+                        }
+
+                        if (item.itemType == 0 && item.flag_240206b != 'Y') {
+                            ul_info4.append($('<li>').text('階級'));
+                            let ItemGradeLevel_c = get_ItemGradeLevel_c(item.ItemGradeLevel);
+                            ul_info4.append($('<li>').text(ItemGradeLevel_c ? ItemGradeLevel_c : '-'));
+
+                            div_info.append(ul_info4);
+                        }
+
+                        let slots_html = '';
+                        let slots = [];
+                        item.slot_1 ? slots.push(item.slot_1) : null;
+                        item.slot_2 ? slots.push(item.slot_2) : null;
+                        item.slot_3 ? slots.push(item.slot_3) : null;
+                        item.slot_4 ? slots.push(item.slot_4) : null;
+
+                        for (i = 0; i < slots.length; i++) {
+                            if (i != 0) { slots_html += '<br>'; }
+                            slots_html += slots[i];
+                        }
+                        if (slots.length == 0) { slots_html = '-'; }
+
+                        let RandomOpts_html = '';
+                        let RandomOpts = [];
+                        item.RandomOpt1 ? RandomOpts.push(item.RandomOpt1) : null;
+                        item.RandomOpt2 ? RandomOpts.push(item.RandomOpt2) : null;
+                        item.RandomOpt3 ? RandomOpts.push(item.RandomOpt3) : null;
+                        item.RandomOpt4 ? RandomOpts.push(item.RandomOpt4) : null;
+                        item.RandomOpt5 ? RandomOpts.push(item.RandomOpt5) : null;
+
+                        for (i = 0; i < RandomOpts.length; i++) {
+                            if (i != 0) { RandomOpts_html += '<br>'; }
+                            RandomOpts_html += RandomOpts[i];
+                        }
+                        if (RandomOpts.length == 0) { RandomOpts_html = '-'; }
+
+                        if (item.itemType == 0) {
+                            ul_info2.append($('<li>').text('卡片/附魔'));
+                            ul_info2.append($('<li>').html(slots_html));
+
+                            ul_info3.append($('<li>').text('附加能力'));
+                            ul_info3.append($('<li>').html(RandomOpts_html));
+
+                            div_info.append(ul_info2);
+                            div_info.append(ul_info3);
+                        }
+
+                        let mapName = (item.mapName ? item.mapName.replace('.gat', '') : '');
+                        if (mapName) {
+                            ul_info5.append($('<li>').text('成交地圖'));
+                            ul_info5.append($('<li>').text(mapName));
+                            div_info.append(ul_info5);
+                        }
+                        td_info.append(div_info);
+
+                        let Price_with_cama = Intl.NumberFormat().format(item.itemPrice_a);
+
+                        let td_Price = $('<td>').addClass('price')
+                            .append(
+                                $('<span>').text(Price_with_cama).addClass('priceColor_' + Price_with_cama.length)
+                            )
+                            .append(
+                                $('<z>').text(' Z')
+                            );
+
+                        tr.append(td_Price);
+                        tr.append(td_quantity);
+                        tr.append(td_regDate);
+                        tr.append(td_info);
+
+                        $('#tbody_DealDetail').append(tr);
+
+                        $('#chart_title_itemName').text(item.itemName);
+                    }
+                    priceColorsAll();
+                    //buySellColors();
+
+                    history_a_item_DealDetail_count(itemID);
+
+                    //if (response.dt.length >= 2) {
+                    if (row_start != 1 || $('.result--chart').is(":hidden")) {
+                        $('html, body').animate({
+                            scrollTop: $('#PoringUnCry4').offset().top
+                        }, 500);
+                    }
+                    else {
+                        $('html, body').animate({
+                            scrollTop: $('.result--chart').offset().top
+                        }, 500);
+                    }
+                    //}
+                }
+            });
+        }
+
+        function history_a_item_DealDetail_count(itemID) {
+            let Ajax_url = 'RoShopSearch/forAjax_history_a_item_DealDetail_count';
+
+            let inputData = {
+                div_svr: $('#div_svr').attr('_val'),
+                div_history_days: $('#div_history_days').attr('_val'),
+                itemID: itemID.toString(),
+                GroupByMap: $('#chb_GroupByMap').is(':checked').toString()
+            };
+
+            $.ajax({
+                //async: false,
+                type: "POST",
+                url: Ajax_url,
+                contentType: "application/json; charset=utf-8", // 送出的
+                data: JSON.stringify(inputData),
+                dataType: "json",
+                success: function (response) {
+                    //console.log(response);
+                    dt_rows_max = response;
+                    printPageArea();
+                    if (parseInt(dt_rows_max) <= 30) {
+                        $('.pagination').hide();
+                    }
+                    else {
+                        $('.pagination').show();
+                    }
+                }
+            });
+        }
+
+        function history_a_item_DealDetailSlot(itemID) {
+            $('#tbody_DealDetail').empty();
+
+            let Ajax_url = 'RoShopSearch/forAjax_history_a_item_DealDetailSlot';
+
+            let inputData = {
+                div_svr: $('#div_svr').attr('_val'),
+                div_history_days: $('#div_history_days').attr('_val'),
+                itemID: itemID.toString(),
+                txb_KeyWord: $('#txb_KeyWord').val(),
+                row_start: row_start.toString(),
+                sort_by: sort3_sort_by,
+                sort_desc: sort3_sort_desc,
+                GroupByMap: $('#chb_GroupByMap').is(':checked').toString(),
+                token: temp_token
+            };
+
+            $.ajax({
+                //async: false,
+                type: "POST",
+                url: Ajax_url,
+                contentType: "application/json; charset=utf-8", // 送出的
+                data: JSON.stringify(inputData),
+                dataType: "json",
+                success: function (response) {
+                    $('#tbody_DealDetail').empty();
+                    //console.log(response);
+                    if (response.Message) {
+                        swal(response.Message);
+                        return;
+                    }
+                    if (response.dt.length == 0) {
+                        //swal('查無資料');
+                        $('#PoringCry4').show();
+                        $('#PoringUnCry4').hide();
+                        $('.pagination').hide();
+                        return;
+                    }
+                    else {
+                        $('#PoringCry4').hide();
+                        $('#PoringUnCry4').show();
+                    }
+
+                    for (let index in response.dt) {
+                        let item = response.dt[index];
+
+                        let tr = $('<tr>');
+                        let td_quantity = $('<td>').addClass('quantity').attr('align', 'center').text('-');
+                        let td_regDate = $('<td>').addClass('date').text(item.regDate_);
+                        let td_info = $('<td>').addClass('info');
+                        let div_info = $('<div>');
+                        let ul_info0 = $('<ul>');
+                        let ul_info1 = $('<ul>');
+                        let ul_info2 = $('<ul>');
+                        let ul_info3 = $('<ul>');
+                        let ul_info4 = $('<ul>');
+                        let ul_info5 = $('<ul>');
+
+                        if (item.itemType == 0 && item.flag_240206b != 'Y') {
+                            ul_info1.append($('<li>').text('精煉'));
+                            ul_info1.append($('<li>').text(item.itemRefining > 0 ? '+' + item.itemRefining : '-'));
+                            div_info.append(ul_info1);
+                        }
+
+                        if (item.itemType == 0 && item.flag_240206b != 'Y') {
+                            ul_info4.append($('<li>').text('階級'));
+                            let ItemGradeLevel_c = get_ItemGradeLevel_c(item.ItemGradeLevel);
+                            ul_info4.append($('<li>').text(ItemGradeLevel_c ? ItemGradeLevel_c : '-'));
+
+                            div_info.append(ul_info4);
+                        }
+
+                        ul_info0.append($('<li>').text('裝備')); // 卡片或附魔附上的裝備
+                        ul_info0.append($('<li>').text(item.itemName));
+                        div_info.append(ul_info0);
+
+                        let slots_html = '';
+                        let slots = [];
+                        item.slot_1 ? slots.push(item.slot_1) : null;
+                        item.slot_2 ? slots.push(item.slot_2) : null;
+                        item.slot_3 ? slots.push(item.slot_3) : null;
+                        item.slot_4 ? slots.push(item.slot_4) : null;
+
+                        for (i = 0; i < slots.length; i++) {
+                            if (i != 0) { slots_html += '<br>'; }
+                            slots_html += slots[i];
+                        }
+                        if (slots.length == 0) { slots_html = '-'; }
+
+                        let RandomOpts_html = '';
+                        let RandomOpts = [];
+                        item.RandomOpt1 ? RandomOpts.push(item.RandomOpt1) : null;
+                        item.RandomOpt2 ? RandomOpts.push(item.RandomOpt2) : null;
+                        item.RandomOpt3 ? RandomOpts.push(item.RandomOpt3) : null;
+                        item.RandomOpt4 ? RandomOpts.push(item.RandomOpt4) : null;
+                        item.RandomOpt5 ? RandomOpts.push(item.RandomOpt5) : null;
+
+                        for (i = 0; i < RandomOpts.length; i++) {
+                            if (i != 0) { RandomOpts_html += '<br>'; }
+                            RandomOpts_html += RandomOpts[i];
+                        }
+                        if (RandomOpts.length == 0) { RandomOpts_html = '-'; }
+
+                        if (item.itemType == 0) {
+                            ul_info2.append($('<li>').text('卡片/附魔'));
+                            ul_info2.append($('<li>').html(slots_html));
+
+                            ul_info3.append($('<li>').text('附加能力'));
+                            ul_info3.append($('<li>').html(RandomOpts_html));
+
+                            div_info.append(ul_info2);
+                            div_info.append(ul_info3);
+                        }
+
+                        let mapName = (item.mapName ? item.mapName.replace('.gat', '') : '');
+                        if (mapName) {
+                            ul_info5.append($('<li>').text('成交地圖'));
+                            ul_info5.append($('<li>').text(mapName));
+                            div_info.append(ul_info5);
+                        }
+                        td_info.append(div_info);
+
+                        let Price_with_cama = Intl.NumberFormat().format(item.itemPrice_a);
+
+                        let td_Price = $('<td>').addClass('price')
+                            .append(
+                                $('<span>').text(Price_with_cama).addClass('priceColor_' + Price_with_cama.length)
+                            )
+                            .append(
+                                $('<z>').text(' Z')
+                            );
+
+                        tr.append(td_Price);
+                        tr.append(td_quantity);
+                        tr.append(td_regDate);
+                        tr.append(td_info);
+
+                        $('#tbody_DealDetail').append(tr);
+
+                        $('#chart_title_itemName').text(item.itemName);
+                    }
+                    priceColorsAll();
+                    //buySellColors();
+
+                    history_a_item_DealDetailSlot_count(itemID);
+
+                    //if (response.dt.length >= 2) {
+                    if (row_start != 1 || $('.result--chart').is(":hidden")) {
+                        $('html, body').animate({
+                            scrollTop: $('#PoringUnCry4').offset().top
+                        }, 500);
+                    }
+                    else {
+                        $('html, body').animate({
+                            scrollTop: $('.result--chart').offset().top
+                        }, 500);
+                    }
+                    //}
+                }
+            });
+        }
+
+        function history_a_item_DealDetailSlot_count(itemID) {
+            let Ajax_url = 'RoShopSearch/forAjax_history_a_item_DealDetailSlot_count';
+
+            let inputData = {
+                div_svr: $('#div_svr').attr('_val'),
+                div_history_days: $('#div_history_days').attr('_val'),
+                itemID: itemID.toString(),
+                txb_KeyWord: $('#txb_KeyWord').val(),
+                GroupByMap: $('#chb_GroupByMap').is(':checked').toString()
+            };
+
+            $.ajax({
+                //async: false,
+                type: "POST",
+                url: Ajax_url,
+                contentType: "application/json; charset=utf-8", // 送出的
+                data: JSON.stringify(inputData),
+                dataType: "json",
+                success: function (response) {
+                    //console.log(response);
+                    dt_rows_max = response;
+                    printPageArea();
+                    if (parseInt(dt_rows_max) <= 30) {
+                        $('.pagination').hide();
+                    }
+                    else {
+                        $('.pagination').show();
+                    }
+                }
+            });
+        }
+
+        $('.welcome').show();
+        $('.result--shop').hide();
+        $('.pagination').hide();
+        $('.result--history').hide();
+        $('.result--chart').hide();
+        $('.result--historyDetail').hide();
+
+        /*
+        $('.tabs__radio').on('change', function () {
+            let id = $(this).attr('id');
+            //console.log('tabs__radio change ' + id);
+            if (id == 'searchTab1') { }
+            if (id == 'searchTab2') { }
+        });
+        */
+
+        // 首頁消尾巴斜線。避免相對路徑問題。
+        var sPageURL = location.href;
+        //console.log(sPageURL);
+        if (sPageURL.endsWith('/')) {
+            location.href = sPageURL.substr(0, sPageURL.length - 1);
+        }
+
+        // 擱置 24 小時，自動刷新，避免前端版本過舊
+        var TimeoutID = window.setTimeout((() => location.reload()), (1000 * 60 * 60 * 24));
+
+        $('#chb_GroupByMap').on('change', function () {
+            row_start = 1;
+
+            if (DealDetail_mode == 1) {
+                history_a_item_DealDetail(temp_itemID2);
+            }
+
+            if (DealDetail_mode == 2) {
+                history_a_item_DealDetailSlot(temp_itemID2);
+            }
+        });
+
+        let saveRO1Svr_url =
+            'RoShopSearch/forAjax_saveRO1Svr';
+
+        let loadRO1Svr_url =
+            'RoShopSearch/forAjax_loadRO1Svr';
+
+        function saveRO1Svr() {
+            let inputData = {
+                div_svr: $('#div_svr').attr('_val')
+            }
+            $.ajax({
+                //async: false,
+                cache: false,
+                type: 'POST',
+                dataType: 'json',
+                url: saveRO1Svr_url,
+                contentType: "application/json; charset=utf-8", // 送出的
+                data: JSON.stringify(inputData),
+                dataType: "json", // 返回的
+                success: function (response) {
+                    //console.log(response);
+                },
+                error: function (xhr, thrownError) {
+                }
+            });
+        }
+
+        function loadRO1Svr() {
+            $.ajax({
+                //async: false,
+                cache: false,
+                type: 'POST',
+                dataType: 'json',
+                url: loadRO1Svr_url,
+                contentType: "application/json; charset=utf-8", // 送出的
+                data: null,
+                dataType: "json", // 返回的
+                success: function (response) {
+                    //console.log(response);
+                    if (response) {
+                        $('#div_svr').attr('_val', response);
+                        $('#div_svr').html(get_svr_c(response));
+                    }
+                },
+                error: function (xhr, thrownError) {
+                }
+            });
+        }
+        loadRO1Svr();
+
+    </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8ab13136cb506a9c","serverTiming":{"name":{"cfL4":true}},"version":"2024.7.0","token":"a729b68799864ca78829f59e98e52351"}' crossorigin="anonymous"></script>
+</body>
+
+</html>

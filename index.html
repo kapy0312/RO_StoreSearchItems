@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RO_露天市價查詢資料(大範圍)</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 加入 jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>RO_露天市價查詢資料(大範圍)</h1>
+        <button id="fetchDataBtn">載入欲查詢的資料</button><br><br>
+        查詢的清單<br>
+        <textarea id="dataTextArea" rows="10" cols="50"></textarea><br>
+        <button id="startDataBtn">查詢開始</button><br><br>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>關鍵字</th>
+                    <th>資料</th>
+                    <!-- <th>Price 2</th> -->
+                    <!-- <th>Price 3</th> -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be inserted here -->
+            </tbody>
+        </table>
+        <!-- <button id="fetchDataBtn">取得資料</button><br> -->
+        <!-- <ul id="dataList"></ul> -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
