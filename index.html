@@ -21,10 +21,17 @@
                 <i class="fas fa-external-link-alt"></i>
             </a>
         </h1>
-        <button id="fetchDataBtn">載入欲查詢的資料</button><br><br>
+        <div class="center-container">
+            <button id="fetchDataBtn">載入欲查詢的資料</button>
+            <img id="loadingGif1" src="img/load2.gif" alt="Loading..." style="display:none; width:60px; height:60px;">
+        </div>
+        <br><br>
         查詢的清單<br>
         <textarea id="dataTextArea" rows="10" cols="50"></textarea><br>
-        <button id="startDataBtn">查詢開始</button><br><br>
+        <div class="center-container">
+            <button id="startDataBtn">查詢開始</button><br><br>
+            <img id="loadingGif2" src="img/load2.gif" alt="Loading..." style="display:none; width:60px; height:60px;">
+        </div>
         <table id="dataTable">
             <thead>
                 <tr>

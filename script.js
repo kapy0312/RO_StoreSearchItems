@@ -13,6 +13,8 @@ $(document).ready(function () {
 });
 
 function fetchGoogleAppsScriptData() {
+    // 顯示 GIF
+    $('#loadingGif1').show();
     var DataArray = [1];  // 用一維陣列代替
 
     $.ajax({
@@ -23,6 +25,7 @@ function fetchGoogleAppsScriptData() {
         contentType: 'text/plain; charset=utf-8',
         success: function (data) {
             displayData(JSON.parse(data));
+            $('#loadingGif1').hide();
         },
         error: function () {
             alert('Request Failed'); // 处理错误情况
@@ -41,6 +44,8 @@ function displayData(data) {
 var n1;
 
 function RoOpenMarketPriceInquiry() {
+    // 顯示 GIF
+    $('#loadingGif2').show();
     DataObject = getDataArrayFromTextArea();
     $.ajax({
         url: "/DataQuery",
@@ -106,7 +111,8 @@ function updateTable(data) {
         data: JSON.stringify({ DataArray: flatDataArray }),
         contentType: 'text/plain; charset=utf-8',
         success: function (data) {
-            alert('完成')
+            // alert('完成')
+            $('#loadingGif2').hide();
         },
         error: function () {
             alert('Request Failed'); // 处理错误情况
