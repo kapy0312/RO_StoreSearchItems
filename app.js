@@ -43,10 +43,24 @@ const server = http.createServer((req, res) => {
             const DataArray = Object.values(ClientData);
 
             if (parsedUrl.pathname === '/DataQuery') {
-                const browser = await puppeteer.launch({ headless: false });
+                // const browser = await puppeteer.launch({ headless: false });
+                // const RetrunData = await searchKeyword(browser, DataArray);
+
+                //無痕
+                //============================================================
+                const browser = await puppeteer.launch({
+                    headless: false,
+                    args: ['--incognito'] // 启用无痕模式
+                });
+
+                // 无痕模式下的页面
+                // const [page] = await browser.pages(); // 使用无痕模式的页面
+
+                // 使用无痕模式的页面进行关键词搜索
+                const RetrunData = await searchKeyword(browser, DataArray);
 
                 // let allKeywordsData = {};
-                const RetrunData = await searchKeyword(browser, DataArray);
+
                 // for (let keyword of DataArray) {
                 //     console.log(`Searching for: ${keyword}`);
                 //     const data = await searchKeyword(browser, keyword);
@@ -82,6 +96,7 @@ const server = http.createServer((req, res) => {
 });
 
 const port = process.env.PORT || 3000;
+// const port = process.env.PORT || 80;
 server.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
     //連線資料庫
@@ -131,7 +146,7 @@ async function searchKeyword(browser, keywords) {
         await wait(2000); // 等待2秒
 
         // 獲取頁數
-        const totalPages = await page.evaluate(() => {
+        var totalPages = await page.evaluate(() => {
             const pagination = document.querySelector('.pagination');
             if (pagination) {
                 const pages = pagination.querySelectorAll('li a');
@@ -142,6 +157,7 @@ async function searchKeyword(browser, keywords) {
             return 1;
         });
 
+        totalPages = 1; //暫時先讀取第一頁就好
         // 提取所有頁面的表格數據
         let QueryResults = [];
 
